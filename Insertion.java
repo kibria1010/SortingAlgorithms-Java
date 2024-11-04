@@ -1,5 +1,6 @@
 package sorting;
 
+import java.util.Collections;
 import java.util.Comparator;
 
 public class Insertion {
@@ -144,8 +145,10 @@ public class Insertion {
         a[2] = "3";
         a[3] = "4";
         a[4] = "5";
-        Insertion.sort(a, 1, 4, new SpecifyingOrder());
+        Insertion.sort(a, 1, 4, Collections.reverseOrder());
         show(a);
+        
+        
         
     }
 
